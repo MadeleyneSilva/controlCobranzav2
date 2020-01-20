@@ -1,0 +1,18 @@
+[
+    {
+      "icon": "person-add",
+      "name": "Agregar Cliente",
+      "redirectTo": "/agregar-cliente"
+    },
+    {
+      "icon": "add-circle",
+      "name": "Abono Cliente",
+      "redirectTo": "/abono-cliente"
+    },
+    {
+      "icon": "person",
+      "name": "Cuenta Cliente",
+      "redirectTo": "/cuenta-cliente"
+    }
+
+  ]

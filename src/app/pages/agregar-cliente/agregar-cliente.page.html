@@ -1,0 +1,76 @@
+<app-header titulo="Agregar Cliente"></app-header>
+
+<ion-content>
+    <ion-grid fixed="fixed">
+        <ion-row>
+            <ion-col size="4"></ion-col>
+
+            <form>
+                <div>
+                    <br>
+
+                    <ion-item>
+                        <ion-label
+                            class="etiquetas"
+                            position="floating"
+                        >Nombre</ion-label>
+
+                        <ion-input></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label
+                            class="etiquetas"
+                            position="floating"
+                        >Apellido</ion-label>
+
+                        <ion-input></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label
+                            class="etiquetas"
+                            position="floating"
+                        >Dirección</ion-label>
+
+                        <ion-input></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label
+                            class="etiquetas"
+                            position="floating"
+                        >Institución</ion-label>
+
+                        <ion-input></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label
+                            class="etiquetas"
+                            position="floating"
+                        >Fecha de Pago</ion-label>
+
+                        <ion-input></ion-input>
+                    </ion-item>
+                </div>
+
+                <br>
+            </form>
+
+            <ion-col size="6"></ion-col>
+
+            <div style="text-align: center">
+                <ion-col size="4">
+                    <ion-button
+                        expand="block"
+                        position="center"
+                        color="secondary"
+                        class="boton"
+                        (click)="onClick()"
+                    >Agregar</ion-button>
+                </ion-col>
+            </div>
+        </ion-row>
+    </ion-grid>
+</ion-content>
