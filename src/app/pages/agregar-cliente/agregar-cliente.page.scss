@@ -1,10 +1,25 @@
 .etiquetas{
 
     color: var(--ion-color-primary);
+    width: 22.8rem;
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    
+      
 }
 
 .boton{
 
    align-items: center;
    margin-right: 2.5rem;
+   width: 82%;
+   border-left-width: 10px;
+   margin-left: 20.5rem;
+   font-size: 1.25rem;
+
+}
+
+.input-wrapper{
+
+    --color: var(--ion-color-primary) !important;
 }

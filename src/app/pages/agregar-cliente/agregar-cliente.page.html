@@ -15,7 +15,9 @@
                             position="floating"
                         >Nombre</ion-label>
 
-                        <ion-input></ion-input>
+                        <ion-text color="primary">
+                            <ion-input></ion-input>
+                        </ion-text>
                     </ion-item>
 
                     <ion-item>
@@ -24,7 +26,9 @@
                             position="floating"
                         >Apellido</ion-label>
 
-                        <ion-input></ion-input>
+                        <ion-text color="primary">
+                            <ion-input></ion-input>
+                        </ion-text>
                     </ion-item>
 
                     <ion-item>
@@ -33,7 +37,9 @@
                             position="floating"
                         >Dirección</ion-label>
 
-                        <ion-input></ion-input>
+                        <ion-text color="primary">
+                            <ion-input></ion-input>
+                        </ion-text>
                     </ion-item>
 
                     <ion-item>
@@ -42,7 +48,9 @@
                             position="floating"
                         >Institución</ion-label>
 
-                        <ion-input></ion-input>
+                        <ion-text color="primary">
+                            <ion-input ></ion-input>
+                        </ion-text>
                     </ion-item>
 
                     <ion-item>
@@ -51,26 +59,25 @@
                             position="floating"
                         >Fecha de Pago</ion-label>
 
-                        <ion-input></ion-input>
+                        <ion-text color="primary">
+                            <ion-input></ion-input>
+                        </ion-text>
                     </ion-item>
                 </div>
 
                 <br>
             </form>
 
-            <ion-col size="6"></ion-col>
+            <ion-col size="6">
+                <br>
+                <br>
 
-            <div style="text-align: center">
-                <ion-col size="4">
-                    <ion-button
-                        expand="block"
-                        position="center"
-                        color="secondary"
-                        class="boton"
-                        (click)="onClick()"
-                    >Agregar</ion-button>
-                </ion-col>
-            </div>
+                <ion-button
+                    color="secondary"
+                    class="boton"
+                    (click)="onClick()"
+                >Agregar</ion-button>
+            </ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>
