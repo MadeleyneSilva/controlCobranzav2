@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
+import { Observable } from 'rxjs';
+import { Productos } from 'src/app/interfaces/productoInterfaces';
 
 @Component({
   selector: 'app-tabla-saldos',
@@ -7,8 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablaSaldosComponent implements OnInit {
 
-  constructor() { }
+  productos: Observable<Productos[]>;
 
-  ngOnInit() {}
+  constructor(private dataService: DataService) { }
+
+  ngOnInit() {
+
+    this.productos = this.dataService.getProductos();
+
+  }
 
 }

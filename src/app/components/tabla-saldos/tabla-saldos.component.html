@@ -1,29 +1,81 @@
-<ion-grid fixed="fixed" >
-  <div class="tabla">
-      <ion-row >
-          <ion-col size="3">
-              <ion-text color="tertiary">
-                  <h1>Producto</h1>
-              </ion-text>
-          </ion-col>
+<ion-grid fixed="fixed">
+    <div class="tabla">
+        <ion-row class="fondoTitulos"> 
+            <ion-col size="4">
+                <ion-text class="ion-text-left" color="primary">
+                    <h1 class="colorTitulos">Producto</h1>
+                </ion-text>
+            </ion-col>
 
-          <ion-col size="3">
-              <ion-text color="tertiary">
-                  <h1>Monto</h1>
-              </ion-text>
-          </ion-col>
+            <ion-col size="2">
+                <ion-text class="ion-text-left" color="tertiary">
+                    <h1 class="colorTitulos">Material</h1>
+                </ion-text>
+            </ion-col>
 
-          <ion-col size="3">
-              <ion-text color="tertiary">
-                  <h1>Abonos</h1>
-              </ion-text>
-          </ion-col>
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="tertiary">
+                    <h1 class="colorTitulos">Monto</h1>
+                </ion-text>
+            </ion-col>
 
-          <ion-col size="3">
-              <ion-text color="tertiary">
-                  <h1>Saldo</h1>
-              </ion-text>
-          </ion-col>
-      </ion-row>
-  </div>
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="tertiary">
+                    <h1 class="colorTitulos">Abonos</h1>
+                </ion-text>
+            </ion-col>
+
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="tertiary">
+                    <h1 class="colorTitulos">Saldo</h1>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+
+        <ion-row *ngFor="let p of productos | async">
+            <ion-col size="4">
+                <ion-text class="ion-text-left" color="primary">
+                    <h3>{{p.producto}}</h3>
+                </ion-text>
+            </ion-col>
+
+            <ion-col size="2">
+                <ion-text class="ion-text-left" color="primary">
+                    <h3>{{p.material}}</h3>
+                </ion-text>
+            </ion-col>
+
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="primary">
+                    <h3>{{p.monto}}</h3>
+                </ion-text>
+            </ion-col>
+
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="primary">
+                    <h3>{{p.abonos}}</h3>
+                </ion-text>
+            </ion-col>
+
+            <ion-col size="2">
+                <ion-text class="ion-text-center" color="primary">
+                    <h3>{{p.saldo}}</h3>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+
+        <ion-row class="fondoTotal" >
+            <ion-col size="10">
+                <ion-text class="ion-text-right" >
+                    <h3 class="lineaTotal">Total General</h3>
+                </ion-text>
+            </ion-col>
+            <ion-col size="2">
+                <ion-text class="ion-text-center" >
+                    <h3 class="lineaTotal">170</h3>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+
+    </div>
 </ion-grid>

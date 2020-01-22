@@ -1,0 +1,32 @@
+[
+    {
+        "producto": "Cadena Cartier",
+        "material": "Oro",
+        "monto": 190.000,
+        "abonos": 30.000,
+        "saldo": 170.000
+    },
+    {
+        "producto": "Anillo estrella",
+        "material": "Plata",
+        "monto": 190.000,
+        "abonos": 30.000,
+        "saldo": 170.000
+
+    },
+    {
+        "producto": "Pulsera",
+        "material": "Oro",
+        "monto": 190.000,
+        "abonos": 30.000,
+        "saldo": 170.000
+    },
+    {
+        "producto": "Anillo corazón",
+        "material": "Plata",
+        "monto": 190.000,
+        "abonos": 30.000,
+        "saldo": 170.000
+    }
+
+  ]

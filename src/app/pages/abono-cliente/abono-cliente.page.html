@@ -15,23 +15,35 @@
                         </ion-text>
                     </div>
 
+                    <br>
+
                     <div class="ion-float-left">
                         <ion-item>
-                            <ion-label
-                                position="floating"
-                                color="primary"
-                            >Ingrese Monto</ion-label>
-
                             <ion-text color="primary">
-                                <ion-input></ion-input>
+                                <ion-input type="number" class="tamañoTexto"></ion-input>
                             </ion-text>
                         </ion-item>
+                    </div>
+
+                    <div>
+                        <ion-fab
+                            horizontal="end"
+                            vertical="bottom"
+                            activate="true"
+                            slot="fixed"
+                        >
+                            <ion-fab-button color="secondary">
+                                <ion-icon name="add"></ion-icon>
+                            </ion-fab-button>
+                        </ion-fab>
                     </div>
                 </div>
             </ion-col>
         </ion-row>
     </ion-grid>
 
+    <br>
+    <br>
     <br>
     <app-tabla-saldos></app-tabla-saldos>
 </ion-content>
