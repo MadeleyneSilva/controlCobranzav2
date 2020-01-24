@@ -1,0 +1,27 @@
+.tabla{
+
+    background-color: var(--ion-color-moradoLight);
+    text-align: left;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.fondoTitulos{
+
+    background-color: var(--ion-color-secondary);
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+.colorTitulos{
+
+    color: white;
+}
+
+.barraBusqueda{
+
+    color: var(--ion-color-primary);
+    background-color: var(--ion-color-success-tint);
+
+}

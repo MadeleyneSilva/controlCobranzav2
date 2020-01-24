@@ -1,5 +1,46 @@
 <app-header titulo="Cuenta Cliente"></app-header>
+<br>
+<br>
+<br>
 
 <ion-content>
+    <ion-grid fixed="fixed">
+        <ion-toolbar>
+            <ion-searchbar showCancelButton="focus" color="primary" placeholder="Buscar cliente"></ion-searchbar>
+        </ion-toolbar>
 
+        <div class="tabla">
+            <ion-row class="fondoTitulos">
+                <ion-col size="3">
+                    <ion-text color="primary">
+                        <h5 class="colorTitulos">Nombre</h5>
+                    </ion-text>
+                </ion-col>
+
+                <ion-col size="3">
+                    <ion-text color="primary">
+                        <h5 class="colorTitulos">Producto</h5>
+                    </ion-text>
+                </ion-col>
+
+                <ion-col size="2">
+                    <ion-text color="primary">
+                        <h5 class="colorTitulos">Monto</h5>
+                    </ion-text>
+                </ion-col>
+
+                <ion-col size="2">
+                    <ion-text color="primary">
+                        <h5 class="colorTitulos">Abonos</h5>
+                    </ion-text>
+                </ion-col>
+
+                <ion-col size="2">
+                    <ion-text color="primary">
+                        <h5 class="colorTitulos">Saldo</h5>
+                    </ion-text>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
 </ion-content>
