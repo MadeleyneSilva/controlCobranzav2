@@ -17,23 +17,36 @@ export class InicioPage implements OnInit {
 
   constructor(private router: Router, private formInicioSesion: FormBuilder) { 
 
-    this.formulario = new FormGroup ({
-      user: new FormControl('', Validators.compose([Validators.required,
-                                                    Validators.pattern('[a-z A-Z]'),
-                                                    Validators.maxLength(6)])), 
-      pass: new FormControl('', Validators.required)
-    });
 
   }
 
   
   ngOnInit() {
 
+    this.formulario = new FormGroup ({
+      user: new FormControl('', Validators.compose([Validators.maxLength(12),
+                                                    Validators.minLength(6),
+                                                    Validators.pattern('[a-zA-Z0-9]*'),
+                                                    Validators.required])), 
+      pass: new FormControl('', Validators.compose([Validators.minLength(6),        
+                                                    Validators.required]))
+    });
+
 
   }
 
+  validacionCredencial(){
 
-  
+    if(this.formulario.valid){
+
+      this.paginaPrincipal();
+
+    } else {
+
+      console.log("formulario no valido");
+    }
+
+  } 
 
   paginaPrincipal(){
 
