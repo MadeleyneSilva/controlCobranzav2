@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Componente } from 'src/app/interfaces/interfaces';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-inicio',
@@ -15,7 +16,7 @@ export class InicioPage implements OnInit {
   public formulario: FormGroup;
 
 
-  constructor(private router: Router, private formInicioSesion: FormBuilder) { 
+  constructor(private router: Router, private formInicioSesion: FormBuilder, private toastr: ToastrService) { 
 
 
   }
@@ -41,9 +42,14 @@ export class InicioPage implements OnInit {
 
       this.paginaPrincipal();
 
-    } else {
+    } else if (this.formulario.untouched) {
 
-      console.log("formulario no valido");
+      this.toastr.info("Debe ingresar su usuario y contraseña", "ATENCIÓN", {closeButton: true});    
+    }
+    else {
+
+      this.toastr.info("Usuario y/o Contraseña no válido", "ATENCIÓN", {closeButton: true});
+
     }
 
   } 
