@@ -39,7 +39,7 @@ export class InicioPage implements OnInit {
   validacionCredencial(){
 
     if(this.formulario.valid){
-
+      
       this.paginaPrincipal();
 
     } else if (this.formulario.untouched) {

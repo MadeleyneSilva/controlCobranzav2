@@ -5,7 +5,7 @@
         <ion-row>
             <ion-col size="4"></ion-col>
 
-            <form>
+            <form [formGroup]="formNuevoCliente">
                 <div>
                     <br>
 
@@ -13,10 +13,10 @@
                         <ion-label
                             class="etiquetas"
                             position="floating"
-                        >Nombre</ion-label>
+                        >Nombre (*)</ion-label>
 
                         <ion-text color="primary">
-                            <ion-input></ion-input>
+                            <ion-input formControlName="nombreCliente"></ion-input>
                         </ion-text>
                     </ion-item>
 
@@ -24,10 +24,10 @@
                         <ion-label
                             class="etiquetas"
                             position="floating"
-                        >Apellido</ion-label>
+                        >Apellido (*)</ion-label>
 
                         <ion-text color="primary">
-                            <ion-input></ion-input>
+                            <ion-input formControlName="apellidoCliente"></ion-input>
                         </ion-text>
                     </ion-item>
 
@@ -35,10 +35,10 @@
                         <ion-label
                             class="etiquetas"
                             position="floating"
-                        >Dirección</ion-label>
+                        >Dirección (*)</ion-label>
 
                         <ion-text color="primary">
-                            <ion-input></ion-input>
+                            <ion-input formControlName="direccionCliente"></ion-input>
                         </ion-text>
                     </ion-item>
 
@@ -49,7 +49,7 @@
                         >Institución</ion-label>
 
                         <ion-text color="primary">
-                            <ion-input ></ion-input>
+                            <ion-input formControlName="institucionCliente"></ion-input>
                         </ion-text>
                     </ion-item>
 
@@ -57,10 +57,10 @@
                         <ion-label
                             class="etiquetas"
                             position="floating"
-                        >Fecha de Pago</ion-label>
+                        >Fecha de Pago (*)</ion-label>
 
                         <ion-text color="primary">
-                            <ion-input></ion-input>
+                            <ion-input formControlName="fechaPago"></ion-input>
                         </ion-text>
                     </ion-item>
                 </div>
@@ -75,7 +75,7 @@
                 <ion-button
                     color="secondary"
                     class="boton"
-                    (click)="onClick()"
+                    (click)="agregarCliente()"
                 >Agregar</ion-button>
             </ion-col>
         </ion-row>
